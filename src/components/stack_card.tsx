@@ -4,6 +4,7 @@ import onnxLogo from '../assets/onnxai-icon.svg'
 import openAILogo from '../assets/openai-svgrepo-com.svg'
 import pytorchLogo from '../assets/pytorch-icon.svg'
 import RLogo from '../assets/R_logo.svg'
+import FastAPILogo from '../assets/FastAPI.svg'
 
 
 // Map of technology names to their respective logos
@@ -14,6 +15,7 @@ const logoMap: { [key: string]: string } = {
     "OpenAI": openAILogo,
     "PyTorch": pytorchLogo,
     "R": RLogo,
+    "FastAPI": FastAPILogo
 };
 
 type StackCardProps = {
