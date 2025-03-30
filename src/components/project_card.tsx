@@ -11,7 +11,7 @@ export type ProjectCardProps = {
 
 function ProjectCard({ title, description, techStack, githubLink }: ProjectCardProps) {
     return (
-        <div className="shadow-lg p-4 rounded-xl bg-white hover:shadow-2xl transition-all duration-200 max-w-sm h-sm">
+        <div className="shadow-lg p-4 rounded-xl bg-white transition-all duration-200  h-sm w-sm flex flex-col">
             {/* Title and GitHub Link */}
             <a className='flex justify-between items-center mb-2' href={githubLink} target="_blank" rel="noopener noreferrer">
                 <div className="text-2xl font-semibold">{title}</div>
@@ -20,10 +20,10 @@ function ProjectCard({ title, description, techStack, githubLink }: ProjectCardP
 
 
             {/* Description */}
-            <div className="p-2 text-gray-600 mb-3 text-left">{description}</div>
+            <div className="text-xs p-2 text-gray-500 mb-3 text-left">{description}</div>
 
             {/* Tech Stack */}
-            <div className="flex gap-2 flex-wrap">
+            <div className="flex gap-2 flex-wrap mt-auto">
                 {techStack.map((tech, index) => (
                     <StackCard key={index} name={tech} />
                 ))}

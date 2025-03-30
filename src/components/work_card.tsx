@@ -14,7 +14,7 @@ export type WorkCardProps = {
 function WorkCard({ workplace, title, location, duration, link, description }: WorkCardProps) {
     return (
         <>
-            <div className="shadow-lg p-4 rounded-xl bg-white transition-all duration-200 h-sm">
+            <div className="shadow-lg p-4 rounded-xl bg-white transition-all duration-200 h-sm w-[90%]">
                 <div className="flex flex-col sm:flex-row justify-between">
                     <a 
                         className="text-2xl font-semibold text-black-600 underline hover:underline" 
@@ -32,7 +32,7 @@ function WorkCard({ workplace, title, location, duration, link, description }: W
                     <div>{location}</div>
                 </div>
 
-                <ul className="list-disc list-outside pl-5 text-left pt-2 text-gray-500">
+                <ul className="text-xs list-disc list-outside pl-5 text-left pt-2 text-gray-500">
                     {description.map((item, index) => (
                         <li key={index}>{item}</li>
                     ))}
