@@ -4,30 +4,29 @@ import githubLogo from '../assets/github-mark.svg'
 export type ProjectCardProps = {
     title: string,
     description: string,
-    techStack: string[],
     githubLink: string
 }
 
 
-function ProjectCard({ title, description, techStack, githubLink }: ProjectCardProps) {
+function ProjectCard({ title, description,githubLink }: ProjectCardProps) {
     return (
-        <div className="shadow-lg p-4 rounded-xl bg-white transition-all duration-200  h-sm w-sm flex flex-col">
+        <div className=" p-4 border-gray-100 border-b bg-white h-sm  flex flex-col">
             {/* Title and GitHub Link */}
-            <a className='flex justify-between items-center mb-2' href={githubLink} target="_blank" rel="noopener noreferrer">
-                <div className="text-2xl font-semibold">{title}</div>
-                <img src={githubLogo} alt={`${title} GitHub`} className="h-6 w-6 hover:scale-110 transition-transform" />
+            <a className='group text-xl flex items-center mb-2' href={githubLink} target="_blank" rel="noopener noreferrer">
+                {title}
+                <img src={githubLogo} alt={`${title} GitHub`} className="h-3 w-3 ml-2 opacity-0 group-hover:opacity-100 transition-opacity" />
             </a>
 
 
             {/* Description */}
-            <div className="text-xs p-2 text-gray-500 mb-3 text-left">{description}</div>
+            <div className="text-xs text-gray-500 mb-3 text-left">{description}</div>
 
             {/* Tech Stack */}
-            <div className="flex gap-2 flex-wrap mt-auto">
+            {/* <div className="flex gap-2 flex-wrap mt-auto">
                 {techStack.map((tech, index) => (
                     <StackCard key={index} name={tech} />
                 ))}
-            </div>
+            </div> */}
         </div>
     );
 }

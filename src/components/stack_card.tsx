@@ -26,7 +26,7 @@ function StackCard({ name }: StackCardProps) {
     const logoSrc = logoMap[name] || '';
 
     return (
-        <div className="flex items-center gap-1 pt-0 pl-1 pr-2 pl-2 shadow-md">
+        <div className="flex text-s items-center gap-1 pt-0 pl-1 pr-2 pl-2 shadow-md">
             {logoSrc && (
                 <img src={logoSrc} alt={`${name} logo`} className="h-[1em] w-[1em]" />
             )}

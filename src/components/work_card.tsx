@@ -1,7 +1,7 @@
 // type StackCardProps = {
 //     name: string;
 // };
-
+import NewTabLogo from '../assets/icons8-new-tab.svg'
 export type WorkCardProps = {
     workplace: string,
     title: string,
@@ -14,25 +14,46 @@ export type WorkCardProps = {
 function WorkCard({ workplace, title, location, duration, link, description }: WorkCardProps) {
     return (
         <>
-            <div className="shadow-lg p-4 rounded-xl bg-white transition-all duration-200 h-sm w-[90%]">
-                <div className="flex flex-col sm:flex-row justify-between">
+            <div className=" p-4 bg-white border-b border-gray-100 text-left">
+                {/* <div className=" flex flex-col sm:flex-row justify-between">
                     <a 
-                        className="text-2xl font-semibold text-black-600 underline hover:underline" 
+                        className="group flex items-center text-xl font-bold" 
                         href={link} 
                         target="_blank" 
                         rel="noopener noreferrer"
                     >
                         {workplace}
+                        <img src={NewTabLogo} alt={`${workplace} link`} className="ml-2 h-3 w-3 opacity-0 group-hover:opacity-100 transition-opacity inline-block flex-shrink-0"></img>
                     </a>
-                    <div className="md:text-xl font-semibold mt-auto">{duration}</div>
+                    
+                    <div className=" font-semibold  self-start">{duration}</div>
+                </div> */}
+                <div className="flex flex-col sm:flex-row justify-between">
+                    <a 
+                        className="group flex items-center text-xl font-bold" 
+                        href={link} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                    >
+                        <span className="">
+                            {workplace}
+                            <img 
+                                src={NewTabLogo} 
+                                alt={`${workplace} link`} 
+                                className="h-3 w-3 ml-2 opacity-0 group-hover:opacity-100 transition-opacity inline-block flex-shrink-0"
+                            />
+                        </span>
+                    </a>
+                    
+                    <div className="font-semibold self-start">{duration}</div>
                 </div>
 
-                <div className="flex flex-col sm:flex-row justify-between italic text-gray-600">
+                <div className="text-xs flex flex-col sm:flex-row justify-between italic text-gray-500">
                     <div>{title}</div>
                     <div>{location}</div>
                 </div>
 
-                <ul className="text-xs list-disc list-outside pl-5 text-left pt-2 text-gray-500">
+                <ul className="text-xs list-disc list-outside pl-5  pt-2 text-gray-500">
                     {description.map((item, index) => (
                         <li key={index}>{item}</li>
                     ))}

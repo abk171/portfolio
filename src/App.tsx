@@ -9,6 +9,10 @@ import WorkCard, {WorkCardProps} from './components/work_card';
 import WorkCardRender from './components/work_card_render';
 import myWorks from './assets/work.json'
 import myProjects from './assets/project.json'
+// Supports weights 100-700
+import '@fontsource-variable/roboto-mono';
+import NavBar from './components/navbar';
+import Footer from './components/footer';
 
 
 function App() {
@@ -36,12 +40,14 @@ function App() {
 
     return(
         <>
-
-            
-
-            <WorkCardRender works={myWorks}/>
-            <ProjectCardRender projects={myProjects}/>
-
+            <div className="flex flex-col md:flex-row h-screen">
+                <NavBar />
+                <div className="flex-1 p-4">
+                    <WorkCardRender works={myWorks} />
+                    <ProjectCardRender projects={myProjects} />
+                    <Footer/>
+                </div>
+            </div>
         </>
     )
 }
