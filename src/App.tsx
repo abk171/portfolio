@@ -11,7 +11,6 @@ import WorkCardRender from './components/work_card_render';
 import myWorks from './assets/work.json'
 import myProjects from './assets/project.json'
 // Supports weights 100-700
-import '@fontsource-variable/roboto-mono';
 import NavBar from './components/navbar';
 import Footer from './components/footer';
 // import Welcome from './components/home';
@@ -24,7 +23,7 @@ function App() {
    
     return(
         <>
-            <div className="flex flex-col md:flex-row h-screen">
+            <div className="flex flex-col md:flex-row">
                 <Router>
                     <NavBar />
                     <div className="max-w-[750px] mt-[15vh] flex-1 p-4">

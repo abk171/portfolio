@@ -14,7 +14,7 @@ export type WorkCardProps = {
 function WorkCard({ workplace, title, location, duration, link, description }: WorkCardProps) {
     return (
         <>
-            <div className=" pt-4 pb-4 bg-white border-b border-gray-100 text-left">
+            <div className=" pt-4 pb-4  border-b border-gray-100 text-left">
                 {/* <div className=" flex flex-col sm:flex-row justify-between">
                     <a 
                         className="group flex items-center text-xl font-bold" 

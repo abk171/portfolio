@@ -1,53 +1,41 @@
-@import "tailwindcss";
+/* @import "tailwindcss";
 body {
   font-family: 'Roboto Mono Variable', monospace;
+  
+
 }
+html {
+  height: 100vh;
+  background-color: #FFFFe0 ;
+}
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+
 }
 
-a {
-  
-}
+
 a:hover {
   opacity: 60%;
   text-decoration: underline;
-}
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
+} */
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+html, body, #root {
+    @apply m-0 p-0;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+body {
+    @apply bg-[#FFFFE0] font-mono min-h-[100vh];
 }
-
-.card {
-  padding: 2em;
+#root {
+    @apply max-w-screen-lg mx-auto p-8 text-center;
 }
-
-.read-the-docs {
-  color: #888;
+a:hover {
+    @apply opacity-60 underline;
 }
