@@ -5,7 +5,8 @@ import ProjectCard, {ProjectCardProps} from "./project_card";
 function ProjectCardRender({ projects }: { projects: ProjectCardProps[] }) {
     return(
         <>
-            <div className='grid gap-4 max-w-[800px] p-8'>
+        <h1 className="text-left text-xl pb-8 text-bold">Projects</h1>
+            <div className='grid gap-4'>
                 {projects.map((project, key) => (
                     <ProjectCard key={key} {...project}/>
                 ))}

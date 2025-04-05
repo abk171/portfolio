@@ -10,7 +10,7 @@ export type ProjectCardProps = {
 
 function ProjectCard({ title, description,githubLink }: ProjectCardProps) {
     return (
-        <div className=" p-4 border-gray-100 border-b bg-white h-sm  flex flex-col">
+        <div className=" pt-4 border-gray-100 border-b bg-white h-sm  flex flex-col">
             {/* Title and GitHub Link */}
             <a className='group text-xl flex items-center mb-2' href={githubLink} target="_blank" rel="noopener noreferrer">
                 {title}
