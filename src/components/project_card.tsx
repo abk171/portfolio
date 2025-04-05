@@ -1,4 +1,4 @@
-import StackCard from "./stack_card";
+
 import githubLogo from '../assets/github-mark.svg'
 
 export type ProjectCardProps = {

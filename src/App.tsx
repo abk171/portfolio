@@ -1,13 +1,6 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import StackCard from './components/stack_card';
-import ProjectCard, {ProjectCardProps} from './components/project_card';
-import ProjectCardRender from './components/project_card_render';
-import WorkCard, {WorkCardProps} from './components/work_card';
-import WorkCardRender from './components/work_card_render';
+
 import myWorks from './assets/work.json'
 import myProjects from './assets/project.json'
 // Supports weights 100-700
