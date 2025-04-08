@@ -16,7 +16,7 @@ function Footer() {
                 </a>
                 
             </div>
-            <span className='pt-4 text-l'>Made with ❤️</span>
+            <span className='pt-4 text-lg inline-block text-center w-full'>Made with ❤️</span>
             
             
         </>

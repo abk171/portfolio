@@ -10,16 +10,26 @@ export type ProjectCardProps = {
 
 function ProjectCard({ title, description,githubLink }: ProjectCardProps) {
     return (
-        <div className=" pt-4 border-gray-100 border-b  h-sm  flex flex-col">
+        <div className=" pt-4 border-gray-100 border-b  h-sm  flex flex-col text-left">
             {/* Title and GitHub Link */}
-            <a className='group text-xl flex items-center mb-2' href={githubLink} target="_blank" rel="noopener noreferrer">
-                {title}
-                <img src={githubLogo} alt={`${title} GitHub`} className="h-3 w-3 ml-2 opacity-0 group-hover:opacity-100 transition-opacity" />
+            <a 
+                className="group flex items-center text-xl font-bold" 
+                href={githubLink} 
+                target="_blank" 
+                rel="noopener noreferrer"
+            >
+                <span className="">
+                    {title}
+                    <img 
+                        src={githubLogo} 
+                        alt={`github link`} 
+                        className="h-3 w-3 ml-2 opacity-0 group-hover:opacity-100 transition-opacity inline-block flex-shrink-0"
+                    />
+                </span>
             </a>
 
-
             {/* Description */}
-            <div className="text-xs text-gray-500 mb-3 text-left">{description}</div>
+            <div className="text-sm text-gray-500 mb-3 ">{description}</div>
 
             {/* Tech Stack */}
             {/* <div className="flex gap-2 flex-wrap mt-auto">

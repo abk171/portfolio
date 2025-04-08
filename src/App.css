@@ -1,41 +1,25 @@
-/* @import "tailwindcss";
+@import "tailwindcss";
 body {
   font-family: 'Roboto Mono Variable', monospace;
-  
+  background-color: #FFFFe0 ;
 
 }
 html {
   height: 100vh;
-  background-color: #FFFFe0 ;
+  
 }
 
 #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
-  text-align: center;
+  /* text-align: center; */
 
 }
-
 
 a:hover {
   opacity: 60%;
   text-decoration: underline;
-} */
-@import "tailwindcss";
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+}
 
-html, body, #root {
-    @apply m-0 p-0;
-}
-body {
-    @apply bg-[#FFFFE0] font-mono min-h-[100vh];
-}
-#root {
-    @apply max-w-screen-lg mx-auto p-8 text-center;
-}
-a:hover {
-    @apply opacity-60 underline;
-}
+
