@@ -1,4 +1,4 @@
-import WebsiteImage from '../assets/website_photo.jpg'
+import WebsiteImage from '/website_photo.jpg'
 function Welcome() {
     return(
         <div className="text-left flex flex-col">
