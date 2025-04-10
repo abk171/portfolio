@@ -1,7 +1,8 @@
 // type StackCardProps = {
 //     name: string;
 // };
-import NewTabLogo from '../assets/icons8-new-tab.svg'
+import { ImNewTab } from 'react-icons/im';
+
 export type WorkCardProps = {
     workplace: string,
     title: string,
@@ -15,19 +16,7 @@ function WorkCard({ workplace, title, location, duration, link, description }: W
     return (
         <>
             <div className=" pt-4 pb-4  border-b border-gray-100 text-left">
-                {/* <div className=" flex flex-col sm:flex-row justify-between">
-                    <a 
-                        className="group flex items-center text-xl font-bold" 
-                        href={link} 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                    >
-                        {workplace}
-                        <img src={NewTabLogo} alt={`${workplace} link`} className="ml-2 h-3 w-3 opacity-0 group-hover:opacity-100 transition-opacity inline-block flex-shrink-0"></img>
-                    </a>
-                    
-                    <div className=" font-semibold  self-start">{duration}</div>
-                </div> */}
+        
                 <div className="flex flex-col sm:flex-row justify-between">
                     <a 
                         className="group flex items-center text-xl font-bold" 
@@ -37,11 +26,12 @@ function WorkCard({ workplace, title, location, duration, link, description }: W
                     >
                         <span className="">
                             {workplace}
-                            <img 
+                            {/* <img 
                                 src={NewTabLogo} 
                                 alt={`${workplace} link`} 
                                 className="h-3 w-3 ml-2 opacity-0 group-hover:opacity-100 transition-opacity inline-block flex-shrink-0"
-                            />
+                            /> */}
+                            <ImNewTab className="h-3 w-3 ml-2 opacity-0 group-hover:opacity-100 transition-opacity inline-block flex-shrink-0"/>
                         </span>
                     </a>
                     

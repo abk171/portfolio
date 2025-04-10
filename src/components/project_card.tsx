@@ -1,5 +1,6 @@
 
-import githubLogo from '../assets/github-mark.svg'
+import { SiGithub } from 'react-icons/si';
+
 
 export type ProjectCardProps = {
     title: string,
@@ -20,23 +21,14 @@ function ProjectCard({ title, description,githubLink }: ProjectCardProps) {
             >
                 <span className="">
                     {title}
-                    <img 
-                        src={githubLogo} 
-                        alt={`github link`} 
-                        className="h-3 w-3 ml-2 opacity-0 group-hover:opacity-100 transition-opacity inline-block flex-shrink-0"
-                    />
+                    
+                    <SiGithub className="h-3 w-3 ml-2 opacity-0 group-hover:opacity-100 transition-opacity inline-block flex-shrink-0"/>
                 </span>
             </a>
 
             {/* Description */}
             <div className="text-sm text-gray-500 mb-3 ">{description}</div>
 
-            {/* Tech Stack */}
-            {/* <div className="flex gap-2 flex-wrap mt-auto">
-                {techStack.map((tech, index) => (
-                    <StackCard key={index} name={tech} />
-                ))}
-            </div> */}
         </div>
     );
 }

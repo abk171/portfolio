@@ -57,7 +57,7 @@ function Programs({plists}: {plists: ProgramList[]}) {
     }
 
     return(
-        <div className="min-h-[100vh] flex flex-col">
+        <div className="flex flex-col">
             <h1 className="text-left text-xl text-bold pb-8 ">About</h1>
             <span className="text-sm pt-4 text-gray-500">
                 Currently, I am a graduate student at the <a href="https://www.pitt.edu/" target="_blank" rel="noopener noreferrer">University of Pittsburgh</a>. 
@@ -82,9 +82,12 @@ function Programs({plists}: {plists: ProgramList[]}) {
                         } else {
                             buttonClass = "lg:!rounded-none";
                         }
+                        baseButtonClass = baseButtonClass + buttonClass + " group ";
+                        // for dropdown
+                        baseButtonClass = baseButtonClass + `${(index === selectedCount) || (isDropdown)? 'block': 'hidden'} lg:block`;
 
                         return (
-                            <button key={index} className={baseButtonClass + buttonClass + " group " + `${(index === selectedCount) || (isDropdown)? 'block': 'hidden'} lg:block`} onClick={() => {handleClick(index); handleDropdown(isDropdown);}}>
+                            <button key={index} className={baseButtonClass} onClick={() => {handleClick(index); handleDropdown(isDropdown);}}>
                                 {plist.name}<span className={"ml-1 group-hover:rotate-180 " + `${(index == selectedCount) ? 'inline-block': 'hidden'} lg:hidden`}><MdKeyboardArrowDown /></span>
                             </button>
                         );

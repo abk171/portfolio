@@ -1,18 +1,19 @@
-import LinkedinLogo from '../assets/linkedin.svg'
-import GithubLogo from '../assets/github-mark.svg'
-import EmailLogo from '../assets/email-svgrepo-com.svg'
+
+
+import { SiGithub, SiLinkedin } from 'react-icons/si';
+import { MdEmail } from 'react-icons/md';
 function Footer() {
     return(
         <>
-            <div className="mt-20 flex flex-row justify-center items-center pt-8 pb-4">
+            <div className="mt-20 flex flex-row justify-center items-center pt-8 pb-4 ">
                 <a href='https://www.linkedin.com/in/abhigyan-kishor' target="_blank" rel="noopener noreferrer">
-                    <img src={LinkedinLogo} alt='LinkedIn Link' className='ml-2 h-7 w-8'></img>
+                    <SiLinkedin className="ml-2 h-7 w-8 !text-gray-950"/>
                 </a>
                 <a href='https://github.com/abk171' target="_blank" rel="noopener noreferrer">
-                    <img src={GithubLogo} alt='Github Link' className='ml-4 h-8 w-8'></img>
+                    <SiGithub className="ml-4 h-8 w-8 !text-gray-950"/>
                 </a>
                 <a href='mailto:abk171@pitt.edu' target="_blank" rel="noopener noreferrer">
-                    <img src={EmailLogo} alt='Email Link' className='ml-4 h-8 w-8'></img>
+                    <MdEmail className="ml-4 h-8 w-8 !text-gray-950"/>
                 </a>
                 
             </div>
