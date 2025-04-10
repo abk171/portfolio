@@ -1,0 +1,46 @@
+[
+    {
+        "title": "Gosqlite (in progress)",
+        "description": "A simple implementation of sqlite written in go.",
+        "githubLink": "https://github.com/abk171/gosqlite"
+    },
+    {
+        "title": "Model Implementations (in progress)",
+        "description": "Full implementations of popular CV and NLP papers along with scripts for pretraining and testing; updated weekly",
+        "githubLink": "https://github.com/abk171/model_implementations"
+    },
+    {
+        "title": "Portfolio",
+        "description": "This website :) React, Vite and tailwindcss.",
+        "githubLink": "https://github.com/abk171/portfolio"
+    },
+    {
+        "title": "MyYOLO",
+        "description": "Dynamic tanh + ConvNext integration for YOLOv11, forked from ultralytics. Tested on MS COCO.",
+        "githubLink": "https://github.com/abk171/ultralytics"
+    },
+    {
+        "title": "InfinityGPT",
+        "description": "Multimodal LLM for images, text and speech. Conducted fine-tuning and benchmarking on well known benchmarks.",
+        "githubLink": "https://github.com/macabdul9/InfGPT"
+    },
+
+    
+
+    {
+        "title": "First Patient Report",
+        "description": "BioHacks 2024 submission for an automatic transcription service for EMTs to complete hospital handover forms.",
+        "githubLink": "http://github.com/AnuragJCChaturvedi/piar-backend"
+    },
+
+    {
+        "title": "Paint Statistics,PPG",
+        "description": "Regression and classification of paint quality data in R.",
+        "githubLink": "https://github.com/abk171/infsci-2595"
+    },
+    {
+        "title": "Tooth x-ray dataset augmentation",
+        "description": "CycleGAN generated tooth-xray and corresponding segmentation masks in PyTorch.",
+        "githubLink": "https://github.com/abk171/Artificial-Neural-Networks/tree/main/projects"
+    }
+]

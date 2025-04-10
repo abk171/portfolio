@@ -1,0 +1,22 @@
+[
+    {
+        "name": "Languages",
+        "stack": ["Python", "Go", "Java", "R", "TypeScript"]
+    },
+    {
+        "name": "Web",
+        "stack": ["React", "Node", "Express", "FastAPI", "Django", "Tailwind", "Bootstrap"]
+    },
+    {
+        "name": "ML",
+        "stack": ["PyTorch", "TensorFlow", "Numpy", "Langchain", "OpenCV"]
+    },
+    {
+        "name": "Database",
+        "stack": ["PostgreSQL", "MongoDB", "Hadoop", "Redis"]
+    },
+    {
+        "name": "DevOps",
+        "stack": ["GCP", "AWS", "Docker", "Git Actions"]
+    }
+]
