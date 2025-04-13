@@ -60,8 +60,8 @@ function Programs({plists}: {plists: ProgramList[]}) {
         <div className="flex flex-col">
             <h1 className="text-left text-xl text-bold pb-8 ">About</h1>
             <span className="text-sm pt-4 text-gray-500">
-                Currently, I am a graduate student at the <a href="https://www.pitt.edu/" target="_blank" rel="noopener noreferrer">University of Pittsburgh</a>. 
-                I have also taken <i>Intro to deep learning</i> at <a href='https://www.cmu.edu/' rel="noopener noreferrer" target="_blank">Carnegie Mellon University</a>, to gain a more comprehensive knowledge of the subject.
+                Currently, I am a graduate research assistant at the <a href="https://www.pitt.edu/" target="_blank" rel="noopener noreferrer">Pitt HexAI lab</a> where I am involved in applying computer vision to medical imaging problems.
+                Along the way, I also took <i>Intro to deep learning</i> at <a href='https://www.cmu.edu/' rel="noopener noreferrer" target="_blank">Carnegie Mellon University</a>, to gain a more comprehensive knowledge of the subject.
             </span>
             <span className="mt-2 text-sm text-gray-500">
                 Following are some of the technologies I am proficient in.
@@ -93,7 +93,7 @@ function Programs({plists}: {plists: ProgramList[]}) {
                         );
                     })}
                 </div>
-                <div className="mt-4 lg:mt-8 ml-4 h-[200px] min-w-[200px] gap-x-5 gap-y-2 flex-none grid grid-cols-1 lg:grid-cols-2 items-start content-start">
+                <div className="mt-4 lg:mt-8 ml-4  min-w-[200px] gap-x-5 gap-y-2 flex-none grid grid-cols-1 lg:grid-cols-2 items-start content-start">
                 {
                     plists[selectedCount].stack.map((st, index) => (
                         <div key={index} className="flex items-center">
@@ -102,8 +102,15 @@ function Programs({plists}: {plists: ProgramList[]}) {
                         </div>
                     ))
                 }
+                </div>
             </div>
-            </div>
+
+            <h2 className="text-xl mt-10 mb-4">When I'm Not Coding...</h2>
+            <ul className="list-disc list-inside text-gray-500">
+            <li>You’ll find me digging through AI papers or thinking about weird product ideas.</li>
+            <li>Trying to explore all national parks in the US! I have been to smoky mountain and Shenandoah so far.</li>
+            <li>Calling my mom for recipe ideas. I’m not much of a cook.</li>
+            </ul>
         </div>
     );
 }
