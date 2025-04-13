@@ -55,6 +55,7 @@ function Programs({plists}: {plists: ProgramList[]}) {
     const handleDropdown = (open: boolean) => {
         setDropdown(!open);
     }
+    if (plists.length == 0) return null
 
     return(
         <div className="flex flex-col">
@@ -93,7 +94,7 @@ function Programs({plists}: {plists: ProgramList[]}) {
                         );
                     })}
                 </div>
-                <div className="mt-4 lg:mt-8 ml-4  min-w-[200px] gap-x-5 gap-y-2 flex-none grid grid-cols-1 lg:grid-cols-2 items-start content-start">
+                <div className="mt-4 lg:mt-8 ml-4  h-[200px] md:h-[100px] gap-x-5 gap-y-2 flex-none grid grid-cols-1 lg:grid-cols-2 items-start content-start">
                 {
                     plists[selectedCount].stack.map((st, index) => (
                         <div key={index} className="flex items-center">
@@ -106,7 +107,7 @@ function Programs({plists}: {plists: ProgramList[]}) {
             </div>
 
             <h2 className="text-xl mt-10 mb-4">When I'm Not Coding...</h2>
-            <ul className="list-disc list-inside text-gray-500">
+            <ul className="list-disc list-inside text-gray-500 text-sm">
             <li>You’ll find me digging through AI papers or thinking about weird product ideas.</li>
             <li>Trying to explore all national parks in the US! I have been to smoky mountain and Shenandoah so far.</li>
             <li>Calling my mom for recipe ideas. I’m not much of a cook.</li>

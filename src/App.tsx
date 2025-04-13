@@ -46,7 +46,7 @@ loadData();
             <div className="flex flex-col md:flex-row justify-start">
                 <Router>
                     <NavBar />
-                    <div className="max-w-[750px] mt-[15vh] flex-1 p-4">
+                    <div className="max-w-[750px] mt-[15vh]  p-4">
                     <Routes>
                         <Route path="/" element={<Home />} />
                         <Route path="/about" element={<About plists={programLists}/>} />
