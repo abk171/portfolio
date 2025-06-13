@@ -61,7 +61,7 @@ function Programs({plists}: {plists: ProgramList[]}) {
         <div className="flex flex-col">
             <h1 className="text-left text-xl text-bold pb-8 ">About</h1>
             <span className="text-sm pt-4 text-gray-500">
-                Currently, I am an R&D Engineer at <a href='https://www.ansys.com/' target='_blank' rel='noopener nonreferrer>Ansys</a>, where I am applying LLMs to augment various simulation techniques. During my masters, I was a graduate research assistant at the <a href="https://www.pitt.edu/" target="_blank" rel="noopener noreferrer">Pitt HexAI lab</a> where I was involved in applying computer vision to medical imaging problems.
+                Currently, I am an R&D Engineer at <a href='https://www.ansys.com/' target='_blank' rel='noopener nonreferrer'>Ansys</a>, where I am applying LLMs to augment various simulation techniques. During my masters, I was a graduate research assistant at the <a href="https://www.pitt.edu/" target="_blank" rel="noopener noreferrer">Pitt HexAI lab</a> where I was involved in applying computer vision to medical imaging problems.
                 Along the way, I also took <i>Intro to deep learning</i> at <a href='https://www.cmu.edu/' rel="noopener noreferrer" target="_blank">Carnegie Mellon University</a>, to gain a more comprehensive knowledge of the subject.
             </span>
             <span className="mt-2 text-sm text-gray-500">
