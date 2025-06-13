@@ -19,7 +19,7 @@ function Welcome() {
                 </div>
             </div>
             <span className='pt-3 text-gray-500'>Welcome to my portfolio!</span>
-            <span className='pt-3 text-gray-500'>I am a graduate student at the University of Pittsburgh. I am interested in everything related to deep learning. In my free time, I like to draw, play pickleball and read.</span>
+            <span className='pt-3 text-gray-500'>I am an R&D Engineer at <a href='https://www.ansys.com/' target="_blank" rel="noopener noreferrer">Ansys</a>. I am interested in everything related to deep learning. In my free time, I like to draw, play pickleball and read.</span>
             <span className='pt-3 text-gray-500'>Here is my <a href='https://drive.google.com/file/d/1JSHhcARW4gOtUaF1JQ8jwB_BzV1rdGHu/view?usp=sharing' target="_blank" 
                             rel="noopener noreferrer">resume</a>.</span>
             <span className='pt-3 text-gray-500'>Feel free to browse around 😄</span>
