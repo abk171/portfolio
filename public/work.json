@@ -1,5 +1,15 @@
 [
     {
+        "workplace": "Ansys",
+        "title": "R&D Engineer",
+        "location": "Canonsburg, PA"
+        "duration": "May 25 - Present"
+        "link": "https://www.ansys.com/",
+        "description": [
+            "Currently working in the MAPDL tools team to automatically generate simulation tests using LLMs"
+        ]
+    },
+    {
         "workplace": "Pitt HexAI Lab",
         "title": "Graduate Student Researcher",
         "location": "Pittsburgh, PA",
